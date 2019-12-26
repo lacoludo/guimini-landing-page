@@ -7,9 +7,6 @@ $(document).on('ready', () => {
   // Add active class for Home
   if ($('#home').length) $('#nav-home').addClass('active')
 
-  // Add active class for Who Are We
-  if ($('#who-are-we').length) $('#nav-who-are-we').addClass('active')
-
   // Add active class for Join Us
   if ($('#join-us').length) $('#nav-join-us').addClass('active')
 

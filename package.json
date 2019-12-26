@@ -5,7 +5,8 @@
   "version": "1.0.0",
   "author": "Ludovic Lacouture <lacoludo@outlook.com>",
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.1",
+    "bootstrap-cookie-alert": "^1.1.1",
     "bootstrap-validator": "^0.11.9",
     "font-awesome": "^4.7.0",
     "jquery": "^2.2.4",
@@ -13,25 +14,26 @@
     "wow.js": "^1.2.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "@babel/preset-env": "^7.7.1",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
     "babel-loader": "^8.0.6",
     "babel-minify-webpack-plugin": "^0.3.1",
     "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.2.0",
-    "file-loader": "^4.3.0",
+    "css-loader": "^3.4.0",
+    "file-loader": "^5.0.2",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^6.0.0",
-    "mini-css-extract-plugin": "^0.8.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.0",
-    "style-loader": "^1.0.0",
-    "webpack": "^4.41.2",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
   },
   "keywords": [
     "guimni",
@@ -40,13 +42,19 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config webpack.config.prod.js --mode=production",
-    "develop": "webpack-dev-server",
+    "build": "webpack --config webpack.prod.js",
+    "develop": "webpack-dev-server --open --config webpack.dev.js",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop"
+    "start": "npm run develop",
+    "serve": "",
+    "clean": "",
+    "test": ""
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/lacoludo/guimini-landing-page"
+  },
+  "bugs": {
+    "url": "https://github.com/lacoludo/guimini-landing-page/issues"
   }
 }
