@@ -1745,12 +1745,12 @@ Services CSS
   margin-top: 40px;
 
   .btn-primary {
-    color: $template-color;
+    color: $white-color;
     background: $dark-blue-color;
 
     &::before,
     &::after {
-      background: $white-color;
+      background: $template-color;
     }
     &:hover,
     &:focus {

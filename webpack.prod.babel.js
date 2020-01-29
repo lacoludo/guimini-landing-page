@@ -1,13 +1,13 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const merge = require('webpack-merge')
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const path = require('path')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const MinifyPlugin = require('babel-minify-webpack-plugin')
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import merge from 'webpack-merge'
+import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin'
+import path from 'path'
+import { CleanWebpackPlugin } from 'clean-webpack-plugin'
+import MinifyPlugin from 'babel-minify-webpack-plugin'
 
-const common = require('./webpack.common.js')
+import common from './webpack.common.js'
 
-module.exports = merge(common, {
+export default merge(common, {
   mode: 'production',
   output: {
     path: path.resolve(__dirname, 'public')

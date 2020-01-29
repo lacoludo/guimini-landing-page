@@ -16,6 +16,8 @@ import './lib/jquery.meanmenu/jquery.meanmenu.min'
 import 'owl-carousel-2/owl.carousel'
 import 'bootstrap-cookie-alert/cookiealert'
 import 'bootstrap-validator'
+import 'popper.js'
+import 'bootstrap'
 
 // Scripts
 import './js/contact'

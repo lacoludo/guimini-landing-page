@@ -115,6 +115,16 @@ $(document).on('ready', () => {
       )
     })
   })
+
+  // See more button
+  $('#collapseTeam').on('hidden.bs.collapse', () => {
+    $('#collapseTeamButton').text('Voir Plus')
+  })
+
+  // See less button
+  $('#collapseTeam').on('shown.bs.collapse', () => {
+    $('#collapseTeamButton').text('Voir Moins')
+  })
 })
 
 $(window).on('load', () => {
