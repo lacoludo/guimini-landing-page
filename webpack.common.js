@@ -1,17 +1,19 @@
 import webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import path from 'path'
 
 export default {
-  entry: ['./src/main.js'],
+  entry: ['./src/index'],
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'index.html',
-      template: path.resolve('./src/index.html')
+      favicon: './src/favicon.ico'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './src/index.html'
     }),
     new HtmlWebpackPlugin({
       filename: 'join-us.html',
-      template: path.resolve('./src/join-us.html')
+      template: './src/join-us.html'
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
@@ -34,20 +36,7 @@ export default {
         }
       },
       {
-        test: /\.(pdf|doc|docx|xls|xlsx|txt|csv|tsv)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              esModule: false,
-              name: '[name].[ext]',
-              outputPath: './files'
-            }
-          }
-        ]
-      },
-      {
-        test: /\.(woff(2)?|ttf|otf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(eot|otf|svg|ttf|woff(2)?)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: 'file-loader',
@@ -60,7 +49,7 @@ export default {
         ]
       },
       {
-        test: /\.(jpg|jpeg|gif|png|svg|webp)$/,
+        test: /\.(gif|jpe?g|png)$/,
         use: [
           {
             loader: 'file-loader',

@@ -36,17 +36,14 @@ const formSuccess = () => {
   submitMSG(true, 'Message Submitted!')
 }
 
-const formError = () => {
+const formError = () =>
   $('#contactForm')
     .removeClass()
     .addClass('shake animated')
     .one(
       'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-      () => {
-        $(this).removeClass()
-      }
+      () => $('#contactForm').removeClass()
     )
-}
 
 const submitMSG = (valid, msg) => {
   let msgClasses

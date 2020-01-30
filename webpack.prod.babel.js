@@ -30,28 +30,27 @@ export default merge(common, {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
-        test: /\.(jpg|jpeg|gif|png|svg|webp)$/,
+        test: /\.(gif|jpe?g|png|svg|webp)$/i,
         use: [
           {
             loader: 'image-webpack-loader',
             options: {
               gifsicle: {
-                interlaced: true,
-                optimizationLevel: 3
+                interlaced: false
               },
               mozjpeg: {
-                progressive: false,
-                quality: 45
+                progressive: true,
+                quality: 65
               },
               optipng: {
-                enabled: true
+                enabled: false
               },
               pngquant: {
                 quality: [0.65, 0.9],
                 speed: 4
               },
               webp: {
-                quality: 20
+                quality: 75
               }
             }
           }

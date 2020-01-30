@@ -20,8 +20,7 @@ window.initMap = () => {
   marker.addListener('click', toggleBounce)
 }
 
-const toggleBounce = () => {
+const toggleBounce = () =>
   marker.getAnimation() !== null
     ? marker.setAnimation(null)
     : marker.setAnimation(google.maps.Animation.BOUNCE)
-}

@@ -17,6 +17,16 @@ $paragraph-color: #6084a4;
 $bg-gray: #f9f9f9;
 
 @media only #{$media} and ($feature_max : $value_one) {
+  .pt-120 {
+    padding: {
+      top: 60px;
+    }
+  }
+  .pb-120 {
+    padding: {
+      bottom: 60px;
+    }
+  }
   .ptb-120 {
     padding: {
       top: 60px;
@@ -1258,6 +1268,16 @@ $bg-gray: #f9f9f9;
 }
 
 @media only #{$media} and ($feature_min : $value_two) and ($feature_max : $value_three) {
+  .pt-120 {
+    padding: {
+      top: 80px;
+    }
+  }
+  .pb-120 {
+    padding: {
+      bottom: 80px;
+    }
+  }
   .ptb-120 {
     padding: {
       top: 80px;
