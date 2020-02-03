@@ -5,7 +5,6 @@ import common from './webpack.common.js'
 
 export default merge(common, {
   mode: 'development',
-  devtool: 'source-maps',
   plugins: [new webpack.HotModuleReplacementPlugin()],
   module: {
     rules: [
@@ -14,5 +13,6 @@ export default merge(common, {
         use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
-  }
+  },
+  devtool: 'source-maps'
 })

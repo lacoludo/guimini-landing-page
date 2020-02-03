@@ -1755,21 +1755,6 @@ Services CSS
   margin-top: 40px;
 
   .btn-primary {
-    color: $white-color;
-    background: $dark-blue-color;
-
-    &::before,
-    &::after {
-      background: $template-color;
-    }
-    &:hover,
-    &:focus {
-      color: $white-color;
-    }
-  }
-}
-.contact-btn {
-  .btn-primary {
     color: $template-color;
     background: $dark-blue-color;
 
@@ -1780,6 +1765,21 @@ Services CSS
     &:hover,
     &:focus {
       color: $template-color;
+    }
+  }
+}
+.contact-btn {
+  .btn-primary {
+    color: $white-color;
+    background: $dark-blue-color;
+
+    &::before,
+    &::after {
+      background: $template-color;
+    }
+    &:hover,
+    &:focus {
+      color: $white-color;
     }
   }
 }

@@ -9,12 +9,6 @@ import common from './webpack.common.js'
 
 export default merge(common, {
   mode: 'production',
-  output: {
-    path: path.resolve(__dirname, 'public')
-  },
-  optimization: {
-    minimizer: [new OptimizeCSSAssetsPlugin()]
-  },
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
@@ -57,5 +51,11 @@ export default merge(common, {
         ]
       }
     ]
+  },
+  output: {
+    path: path.resolve('./public')
+  },
+  optimization: {
+    minimizer: [new OptimizeCSSAssetsPlugin()]
   }
 })
