@@ -75,16 +75,6 @@ $(document).on('ready', () => {
     )
   )
 
-  // Go to Team
-  $('.go-team').on('click', () =>
-    $('html, body').animate(
-      {
-        scrollTop: $('#team').offset().top
-      },
-      500
-    )
-  )
-
   // Go to Blog
   $('.go-blog').on('click', () =>
     $('html, body').animate(
