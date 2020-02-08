@@ -43,7 +43,7 @@ export default {
             options: {
               esModule: false,
               name: '[name].[ext]',
-              outputPath: './fonts'
+              outputPath: './font'
             }
           }
         ]

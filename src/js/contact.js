@@ -15,7 +15,6 @@ const submitForm = () => {
   const email = $('#email').val()
   const msg_subject = $('#msg_subject').val()
   const message = $('#message').val()
-
   $.ajax({
     type: 'POST',
     url: 'assets/php/form-process.php',

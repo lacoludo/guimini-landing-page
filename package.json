@@ -6,7 +6,6 @@
   "author": "Ludovic Lacouture <lacoludo@outlook.com>",
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "bootstrap-cookie-alert": "^1.1.1",
     "bootstrap-validator": "^0.11.9",
     "font-awesome": "^4.7.0",
     "jquery": "^2.2.4",

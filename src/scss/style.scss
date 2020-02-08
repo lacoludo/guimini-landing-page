@@ -1,15 +1,4 @@
 /*
-@File: Artflex Template Styles
-
-* This file contains the styling for the actual tepmlate, this
-is the file you need to edit to change the look of the
-tepmlate.
-
-This files table contents are outlined below>>>>>
-
-*******************************************
-*******************************************
-
 ==== INDEX PAGE CSS
 
 ** - Default CSS
@@ -53,10 +42,19 @@ This files table contents are outlined below>>>>>
 /*================================================
 Default CSS
 =================================================*/
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('./cookie-alert.scss');
+// @import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
-$font-family: 'Rubik', sans-serif;
+@font-face {
+  font-family: 'Gotham';
+  src: url('../font/gotham-bold/Gotham-Bold.woff2') format('woff2'),
+    url('../font/gotham-bold/Gotham-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+$font-family: 'Gotham', sans-serif;
 $paragraph-font-family: 'Open Sans', sans-serif;
 $template-color: #41bee7;
 $dark-blue-color: #242d3d;
@@ -127,6 +125,11 @@ h5,
 h6 {
   color: $black-color;
   font-weight: 500;
+}
+.mr-15 {
+  margin: {
+    right: 15px;
+  }
 }
 .pt-120 {
   padding: {
@@ -358,6 +361,10 @@ h6 {
       }
     }
   }
+}
+
+.c-pointer {
+  cursor: pointer;
 }
 
 /*================================================
@@ -1238,7 +1245,7 @@ Main Banner CSS
       content: '';
       width: 100%;
       height: 100%;
-      background-image: url(../img/dot.png);
+      // background-image: url(../img/dot.png);
       left: 0;
       top: 0;
     }
@@ -1424,22 +1431,22 @@ Main Banner CSS
 /* creative-blog-home */
 
 .item-bg1 {
-  background-image: url(../img/main-bg-1.jpg);
+  // background-image: url(../img/main-bg-1.jpg);
 }
 .item-bg2 {
-  background-image: url(../img/main-bg-2.jpg);
+  // background-image: url(../img/main-bg-2.jpg);
 }
 .item-bg3 {
-  background-image: url(../img/main-bg-3.jpg);
+  // background-image: url(../img/main-bg-3.jpg);
 }
 .item-bg4 {
-  background-image: url(../img/main-bg-4.jpg);
+  // background-image: url(../img/main-bg-4.jpg);
 }
 .item-bg5 {
-  background-image: url(../img/main-bg-5.jpg);
+  // background-image: url(../img/main-bg-5.jpg);
 }
 .item-bg6 {
-  background-image: url(../img/main-bg-6.jpg);
+  // background-image: url(../img/main-bg-6.jpg);
 }
 .shape1 {
   position: absolute;
@@ -1935,7 +1942,7 @@ About CSS
 }
 .cta-about-image {
   background: {
-    image: url(../img/cta-about.jpg);
+    // image: url(../img/cta-about.jpg);
     position: center center;
     size: cover;
     repeat: no-repeat;
@@ -3366,7 +3373,7 @@ Page Title CSS
     content: '';
     width: 100%;
     height: 100%;
-    background-image: url(../img/dot.png);
+    // background-image: url(../img/dot.png);
     left: 0;
     top: 0;
   }
@@ -4853,7 +4860,7 @@ Coming Soon CSS
   position: relative;
   z-index: 1;
   background: {
-    image: url(../img/coming-soon-banner.jpg);
+    // image: url(../img/coming-soon-banner.jpg);
     position: center center;
     size: cover;
     attachment: fixed;
@@ -4966,7 +4973,7 @@ Coming Soon CSS
 404 Error CSS
 =================================================*/
 .error {
-  background: url(../img/error.gif) no-repeat center center fixed;
+  // background: url(../img/error.gif) no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   text-align: center;

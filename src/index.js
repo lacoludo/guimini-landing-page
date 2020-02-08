@@ -2,7 +2,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './lib/animate.css/animate.min.css'
 import './lib/jquery.meanmenu/meanmenu.css'
-import 'bootstrap-cookie-alert/cookiealert.css'
 import 'odometer/themes/odometer-theme-default.css'
 import 'owl-carousel-2/assets/owl.carousel.css'
 import './lib/icofont/css/icofont.min.css'
@@ -14,7 +13,6 @@ import './scss/responsive.scss'
 
 // JavaScript libraries
 import './lib/jquery.meanmenu/jquery.meanmenu.min'
-import 'bootstrap-cookie-alert/cookiealert'
 import 'jquery.appear'
 import 'odometer'
 import 'owl-carousel-2/owl.carousel'
@@ -23,6 +21,7 @@ import 'popper.js'
 import 'bootstrap'
 
 // Scripts
+import './js/cookie-alert'
 import './js/contact'
 import './js/map'
 import './js/main'
