@@ -1479,7 +1479,7 @@ Main Banner CSS
   left: 3%;
   top: 50%;
   z-index: -1;
-  animation: rotate3d 4s linear infinite;
+  animation: moveleftbounce 3s linear infinite;
 }
 .shape7 {
   position: absolute;
@@ -2606,7 +2606,7 @@ Team CSS
 
   &.bg-image {
     background: {
-      image: url(../img/shapes/bg-shape.jpg);
+      // image: url(../img/shapes/bg-shape.jpg);
       attachment: fixed;
       repeat: no-repeat;
       position: center center;

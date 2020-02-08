@@ -22,40 +22,13 @@ export default merge(common, {
       {
         test: /\.(css|scss)$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
-      },
-      {
-        test: /\.(gif|jpe?g|png|svg|webp)$/i,
-        use: [
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              gifsicle: {
-                interlaced: false
-              },
-              mozjpeg: {
-                progressive: true,
-                quality: 65
-              },
-              optipng: {
-                enabled: false
-              },
-              pngquant: {
-                quality: [0.65, 0.9],
-                speed: 4
-              },
-              webp: {
-                quality: 75
-              }
-            }
-          }
-        ]
       }
     ]
   },
-  output: {
-    path: path.resolve('./public')
-  },
   optimization: {
     minimizer: [new OptimizeCSSAssetsPlugin()]
+  },
+  output: {
+    path: path.resolve('./public')
   }
 })
